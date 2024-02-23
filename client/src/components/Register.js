@@ -37,7 +37,7 @@ const Register = () => {
     console.log("Register Data", data)
     try {
       // const response = await axios.post("http://localhost:9000/auth/register",
-      const response = await axios.post("https://ecommerce-mern-hc963njrh-shahlahassan123s-projects.vercel.app/auth/register",
+      const response = await axios.post("https://ecommerce-mern-sooty.vercel.app/auth/register",
        { fullName: data.fullName, 
         phone: data.phone,
         email:data.email,

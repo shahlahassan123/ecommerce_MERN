@@ -7,7 +7,7 @@ import {Grid, Box, Typography, Button, Stack} from '@mui/material'
 import { addToCart , decreaseQuantity } from '../slices/CartSlice'
 
 // const BASE_URL = "http://localhost:9000/products"
-const BASE_URL = "https://ecommerce-mern-hc963njrh-shahlahassan123s-projects.vercel.app/products"
+const BASE_URL = "https://ecommerce-mern-sooty.vercel.app/products"
 
 const fetchAllProducts = (categoryId) =>{
   return axios.get(`https://api.escuelajs.co/api/v1/products/?categoryId=${categoryId}`)
@@ -15,6 +15,8 @@ const fetchAllProducts = (categoryId) =>{
 
 const FetchProducts = ({ categoryId }) => {
     const { isLoading, data } = useQuery(['all-products', categoryId], () => fetchAllProducts(categoryId))
+
+    
   
     const dispatch = useDispatch()
     const navigate = useNavigate()

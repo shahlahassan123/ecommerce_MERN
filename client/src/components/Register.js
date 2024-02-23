@@ -32,6 +32,7 @@ const Register = () => {
    return result
   }
 
+  axios.defaults.withCredentials = true;
   const onSubmit = async (data) => {
     console.log("Register Data", data)
     try {

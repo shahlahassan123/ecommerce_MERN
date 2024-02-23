@@ -11,13 +11,14 @@ const app = express();
 
 app.use(express.json())
 // app.use(cors())
-app.use(cors(
-    {
-        origin : ["https://ecommerce-mern-n5ro.vercel.app"],
-        methods : ["GET", "POST", "PUT", "DELETE"] ,
-        credentials: true
-    }
-))
+app.use(cors({
+    origin: "https://ecommerce-mern-n5ro.vercel.app",
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    credentials: true,
+    allowedHeaders: ["Content-Type", "Authorization"], // Optional: specify allowed headers
+    exposedHeaders: ["Content-Length", "Authorization"], // Optional: specify exposed headers
+}));
+
 
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended: false}))

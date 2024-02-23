@@ -16,7 +16,8 @@ const Address = ({setModalIsOpen}) => {
     //Adding address to DB using react query
     const createAddress = async (addressData) => {
         try {
-            const response = await axios.post("http://localhost:9000/address", addressData)
+            // const response = await axios.post("http://localhost:9000/address", addressData)
+            const response = await axios.post("https://ecommerce-mern-hc963njrh-shahlahassan123s-projects.vercel.app/address", addressData)
             return response.data
         }
         catch (err) {

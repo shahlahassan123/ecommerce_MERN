@@ -17,7 +17,8 @@ const Profile = () => {
   let userID = localStorage.getItem('userID')
 
   const fetchOrdersByUsers = (userID) =>{
-    return axios.get(`http://localhost:9000/orders/:${userID}`)
+    // return axios.get(`http://localhost:9000/orders/:${userID}`)
+    return axios.get(`https://ecommerce-mern-hc963njrh-shahlahassan123s-projects.vercel.app/orders/:${userID}`)
   }
 
   const { isLoading, data } = useQuery('orders-by-user',()=> fetchOrdersByUsers(userID));

@@ -5,7 +5,8 @@ import { Accordion, AccordionSummary, AccordionDetails, Typography } from '@mui/
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import FetchProducts from './FetchProducts';
 
-const BASE_URL = 'http://localhost:9000/categories';
+// const BASE_URL = 'http://localhost:9000/categories';
+const  BASE_URL = 'https://ecommerce-mern-hc963njrh-shahlahassan123s-projects.vercel.app/categories'
 
 const fetchAllCategories = () => {
   return axios.get(BASE_URL);

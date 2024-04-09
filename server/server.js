@@ -15,8 +15,8 @@ app.use(cors({
     origin: "https://ecommerce-mern-n5ro.vercel.app",
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
-    allowedHeaders: ["Content-Type", "Authorization"], // Optional: specify allowed headers
-    exposedHeaders: ["Content-Length", "Authorization"], // Optional: specify exposed headers
+    allowedHeaders: ["Content-Type", "Authorization"], 
+    exposedHeaders: ["Content-Length", "Authorization"], 
 }));
 
 

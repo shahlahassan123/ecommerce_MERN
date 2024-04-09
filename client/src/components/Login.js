@@ -29,7 +29,7 @@ const Login = () => {
     console.log("Login Data",data)
     try{
             // const response = await axios.post("http://localhost:9000/auth/login", {email : data.email, password : data.password})
-            const response = await axios.post("https://ecommerce-mern-sooty.vercel.app/auth/login", {email : data.email, password : data.password})
+            const response = await axios.post("https://ecommerce-mern-u0y0.onrender.com/auth/login", {email : data.email, password : data.password})
             console.log("Login response", response)
             // setCookies('access_token', response.data.token, {path: '/'})
             setCookies('access_token', response.data.token)

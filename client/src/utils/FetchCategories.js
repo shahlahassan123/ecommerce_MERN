@@ -6,7 +6,7 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import FetchProducts from './FetchProducts';
 
 // const BASE_URL = 'http://localhost:9000/categories';
-const  BASE_URL = 'https://ecommerce-mern-sooty.vercel.app/categories'
+const  BASE_URL = 'https://ecommerce-mern-u0y0.onrender.com/categories'
 
 const fetchAllCategories = () => {
   return axios.get(BASE_URL);

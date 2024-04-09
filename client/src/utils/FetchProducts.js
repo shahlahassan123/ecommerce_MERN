@@ -7,7 +7,7 @@ import {Grid, Box, Typography, Button, Stack} from '@mui/material'
 import { addToCart , decreaseQuantity } from '../slices/CartSlice'
 
 // const BASE_URL = "http://localhost:9000/products"
-const BASE_URL = "https://ecommerce-mern-sooty.vercel.app/products"
+const BASE_URL = "https://ecommerce-mern-u0y0.onrender.com/products"
 
 const fetchAllProducts = (categoryId) =>{
   return axios.get(`https://api.escuelajs.co/api/v1/products/?categoryId=${categoryId}`)

@@ -37,7 +37,7 @@ const Cart = () => {
   const createOrder = async (orderData) => {
     try {
       // const response = await axios.post("http://localhost:9000/orders", orderData)
-      const response = await axios.post("https://ecommerce-mern-sooty.vercel.app/orders", orderData)
+      const response = await axios.post("https://ecommerce-mern-u0y0.onrender.com/orders", orderData)
       return response.data
     }
     catch (err) { 

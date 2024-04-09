@@ -17,7 +17,7 @@ const Address = ({setModalIsOpen}) => {
     const createAddress = async (addressData) => {
         try {
             // const response = await axios.post("http://localhost:9000/address", addressData)
-            const response = await axios.post("https://ecommerce-mern-sooty.vercel.app/address", addressData)
+            const response = await axios.post("https://ecommerce-mern-u0y0.onrender.com/address", addressData)
             return response.data
         }
         catch (err) {

@@ -15,7 +15,7 @@ const AddressDropdown = () => {
     let userID = localStorage.getItem('userID')
     const fetchAddressByUsers = (userID) =>{
       // return axios.get(`http://localhost:9000/address/:${userID}`)
-      return axios.get(`https://ecommerce-mern-sooty.vercel.app//address/:${userID}`)
+      return axios.get(`https://ecommerce-mern-u0y0.onrender.com/address/:${userID}`)
     }
 
 

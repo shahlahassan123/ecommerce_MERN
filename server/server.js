@@ -12,7 +12,8 @@ const app = express();
 app.use(express.json())
 // app.use(cors())
 app.use(cors({
-    origin: "https://ecommerce-mern-n5ro.vercel.app",
+    // origin: "https://ecommerce-mern-n5ro.vercel.app",
+    origin: "https://ecommerce-mern-1-yi5n.onrender.com",
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
     allowedHeaders: ["Content-Type", "Authorization"], 
